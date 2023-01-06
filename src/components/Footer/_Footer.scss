@@ -1,0 +1,49 @@
+.footer {
+  margin: 5vh 0vw 0vh 0vw;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  margin: 0vh auto;
+}
+
+.houseSvg2 {
+  padding: 10px;
+  margin: -10px auto;
+}
+
+.k2 {
+  color: white;
+  font-variant: all-petite-caps;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.s2,
+.a2 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.footer-txt {
+  color: white;
+  margin: 2vh auto;
+  font-size: 1.5rem;
+}
+
+////////////////  responsive  ////////////////
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  .footer-logo {
+    margin: 0vh 0vw -10vh 0vw;
+    padding: 5vh 0vw;
+  }
+  .footer-txt {
+    margin: 5vh auto;
+    padding: 5vh 0vw;
+    font-size: 1rem;
+  }
+}

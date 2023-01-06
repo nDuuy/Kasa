@@ -1,0 +1,73 @@
+$color_1: #ff6060;
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 40px auto;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+}
+.links {
+  margin: 0vh 1vw;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  color: $color_1;
+}
+.nav-active {
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  color: $color_1;
+}
+
+.logo {
+  margin-left: 1vw;
+}
+
+.k {
+  color: #ff6060;
+  font-variant: all-petite-caps;
+  font-size: 9rem;
+  font-weight: 500;
+}
+
+.s,
+.a {
+  color: #ff6060;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.houseSvg {
+  margin: 0px 5px;
+}
+
+////////////////  responsive  ////////////////
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  header {
+    align-items: baseline;
+    margin: 20px auto;
+  }
+
+  .k {
+    font-size: 5rem;
+  }
+
+  .s,
+  .a {
+    color: #ff6060;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .houseSvg {
+    margin: -15px 0px;
+    padding: 2vw;
+  }
+}

@@ -1,0 +1,43 @@
+$color_1: #ff6060;
+
+.main-container-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20rem;
+  line-height: 142.6%;
+  color: $color_1;
+}
+.error-txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 142.6%;
+  color: $color_1;
+}
+.return-txt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  text-decoration-line: underline;
+  color: $color_1;
+  margin: 10vh auto;
+}
+
+////////////////  responsive  ////////////////
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  .error-title {
+    font-size: 10rem;
+  }
+
+  .error-txt {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

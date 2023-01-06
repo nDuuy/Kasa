@@ -1,0 +1,83 @@
+$color_1: white;
+$color_2: #ffffff;
+
+/* section Banner img Home and About */
+/* Home */
+/* About */
+.section-Home {
+  background: url(../../assets/img/eric-muhr-P_XxsdVgtpQ-unsplash.jpg);
+  position: relative;
+  margin-bottom: 5vh;
+  width: 100%;
+  max-width: 60%;
+  height: 20vh;
+  background-position: 0% 44%;
+  background-size: cover;
+  border-radius: 25px;
+  left: 20%;
+  top: 20%;
+}
+.bg-filtre {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0.3;
+  border-radius: 25px;
+  color: $color_1;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-Home-p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 142.6%;
+  color: $color_2;
+}
+.section-About {
+  background: url(../../assets/img/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg);
+  position: relative;
+  margin-bottom: 5vh;
+  width: 100%;
+  max-width: 60%;
+  height: 20vh;
+  background-position: 0% 44%;
+  background-size: cover;
+  border-radius: 25px;
+  left: 20%;
+  top: 20%;
+}
+
+////////////////  responsive  ////////////////
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  .section-About {
+    max-width: 90%;
+    height: 30vh;
+    left: 50%;
+    top: 0vh;
+    transform: translate(-50%);
+    border-radius: 15px;
+    background-size: 150%;
+    background-position: 80% 50%;
+  }
+
+  .section-Home {
+    max-width: 90%;
+    height: 18vh;
+    background-size: 200%;
+    background-position: 45% 48%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0%;
+    margin-bottom: 0vh;
+  }
+
+  .banner-home-txt {
+    font-size: 2rem;
+    padding: 5%;
+  }
+}

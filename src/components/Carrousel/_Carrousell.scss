@@ -1,0 +1,68 @@
+.appart-main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.carrousel-container {
+  width: 100%;
+  margin: 5vh auto;
+  position: relative;
+}
+.pics-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.pics-carousel {
+  width: 100%;
+  max-width: 80%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.right-arrow {
+  position: absolute;
+  width: 3vw;
+  height: auto;
+  top: 60%;
+  right: 12%;
+  transform: translate(-12%, -60%);
+}
+
+.left-arrow {
+  position: absolute;
+  width: 3vw;
+  height: auto;
+  top: 60%;
+  left: 12%;
+  transform: translate(-12%, -60%);
+}
+
+////////////////  responsive  ////////////////
+
+@media all and (min-width: 300px) and (max-width: 1024px) {
+  .pics-carousel {
+    max-width: 90%;
+    height: 40vh;
+  }
+
+  .left-arrow {
+    width: 5vw;
+    height: auto;
+    top: 48%;
+    left: 8%;
+    transform: translate(-8%, -48%);
+  }
+
+  .right-arrow {
+    width: 5vw;
+    height: auto;
+    top: 48%;
+    right: 8%;
+    transform: translate(-8%, -48%);
+  }
+}
