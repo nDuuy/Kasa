@@ -1,5 +1,6 @@
 
-                    Kasa
+                            Kasa
+
 
 Développez une application Web avec React et React Router
 
@@ -9,6 +10,8 @@ Mettez en place des composants avec React et les routes de l'application avec Re
 
 /****************************************************************/
 
+
+                            how to run project
 npm i              
 
 npm run start 

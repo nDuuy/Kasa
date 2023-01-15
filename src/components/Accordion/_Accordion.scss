@@ -46,27 +46,38 @@ section.content {
     line-height: 142.6%;
     color: $color_2;
   }
-  .accordion__icon {
-    &::before {
-      transform: rotate(0deg);
-      opacity: 0;
-    }
-  }
+  // .accordion-icon {
+  //   &::before {
+  //     transform: rotate(0deg);
+  //     opacity: 0;
+  //   }
+  // }
 }
-.accordion__icon {
+// .accordion-icon {
+//   position: relative;
+//   width: 20px;
+//   height: 25px;
+//   background: transparent;
+//   &::before {
+//     position: absolute;
+//     content: "";
+//     width: 10px;
+//     height: 1px;
+//     background: #333;
+//     transform: rotate(90deg);
+//     transition: all 0.2s;
+//   }
+// }
+
+.accordion-icon {
   position: relative;
   width: 20px;
-  height: 3px;
-  background: white;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 1px;
-    background: #333;
-    transform: rotate(90deg);
-    transition: all 0.2s;
-  }
+  height: 25px;
+  background: transparent;
+}
+.accordion-icon .active {
+  transform: rotate(180deg);
+  transition: all 0.2s;
 }
 
 ////////////////  responsive  ////////////////
