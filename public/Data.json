@@ -30,11 +30,6 @@
 		]
 	},
 	{
-		"id": "",
-		"title": "404",
-		"cover": "https://cdn2.limonhost.net/wp-content/uploads/2020/10/404-not-found-sayfa-bulunamadi-hatasi-ve-cozumu.png"
-	},
-	{
 		"id": "b9123946",
 		"title": "Magnifique appartement proche Canal Saint Martin",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg",
@@ -620,5 +615,10 @@
 			"Marais",
 			"Rivoli"
 		]
+	},
+	{
+		"id": "",
+		"title": "404",
+		"cover": "https://cdn2.limonhost.net/wp-content/uploads/2020/10/404-not-found-sayfa-bulunamadi-hatasi-ve-cozumu.png"
 	}
 ]
