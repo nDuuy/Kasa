@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import vectorUpDown from "../../assets/img/vector-up-down.svg"
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ Title, description }) => {
 
     // by default all active class is off 
     const [active, setActive] = useState(false)
@@ -21,15 +21,15 @@ const Accordion = ({ title, content }) => {
 
                 <div className="accordion-title "
                     onClick={activeToggle}>
-                    {title}
-                    <span >
+                    {Title}
+                    <span className={`arrowDropdown ${active}`} onClick={() => setActive(!active)} >
                         <img src={vectorUpDown} alt="" className='accordion-icon' />
                     </span>
 
                 </div>
 
                 <div className="accordion-content "
-                    onClick={activeToggle}>{content}
+                    onClick={activeToggle}>{description}
                 </div>
             </div>
         </>
@@ -39,4 +39,3 @@ const Accordion = ({ title, content }) => {
 export default Accordion;
 
 
-<div className=""></div>

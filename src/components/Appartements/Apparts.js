@@ -5,7 +5,7 @@ import Carrousel from '../Carrousel/Carrousel';
 import Tag from '../Tag/Tag';
 import Host from '../Host/Host';
 import Rate from '../Rate/Rate';
-import AccordionHouse from '../Accordion-House/AccordionHouse';
+import Accordion from '../Accordion/Accordion';
 
 
 const Apparts = () => {
@@ -33,7 +33,6 @@ const Apparts = () => {
             // use find to find id 
             const WhatApparARchoose = axiosResult.data.find(({ id }) => id === searchParam.id);
 
-            //
             axiosResult.data.map(() => setAppartChossed(WhatApparARchoose));
 
             // if the id not found send to error page
@@ -97,8 +96,8 @@ const Apparts = () => {
 
                 <section className="equipement-container">
                     <>
-                        <AccordionHouse description={AppartChoosed.description} aboutTitle="Description" />
-                        <AccordionHouse description={equipements} aboutTitle="Équipements" />
+                        <Accordion description={AppartChoosed.description} Title="Description" />
+                        <Accordion description={equipements} Title="Équipements" />
 
                     </>
                 </section>
